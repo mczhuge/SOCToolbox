@@ -44,3 +44,23 @@ After this,
 sh run_eval.sh
 ```
 
+## Reference
+
+```text
+@inproceedings{Smeasure,
+    title={Structure-measure: A new way to evaluate foreground maps},
+    author={Fan, Deng-Ping and Cheng, Ming-Ming and Liu, Yun and Li, Tao and Borji, Ali},
+    booktitle=ICCV,
+    pages={4548--4557},
+    year={2017}
+}
+
+@inproceedings{Emeasure,
+    title="Enhanced-alignment Measure for Binary Foreground Map Evaluation",
+    author="Deng-Ping {Fan} and Cheng {Gong} and Yang {Cao} and Bo {Ren} and Ming-Ming {Cheng} and Ali {Borji}",
+    booktitle=IJCAI,
+    pages="698--704",
+    year={2018}
+}
+```
+
