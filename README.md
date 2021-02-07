@@ -4,7 +4,7 @@
 
 Noted that, some early methods have used different training settings, this may cause unfair comparisons. So, the author of SOC recommend to use these setting:
 
-- (1) using both train and val set to train your model. 
+- (1) using both train and val set of SOC to train your model. 
 - (2) besides, it is better to drop images without salient objects for training and testing.
 
 We have updated the Train(2400)/Test(1200+8 attributes) setting following above suggestions. 
