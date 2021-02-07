@@ -71,5 +71,12 @@ Some codes are borrowed from:
     pages="698--704",
     year={2018}
 }
+
+@article{zhuge2021salient,
+  title={Salient Object Detection via Integrity Learning},
+  author={Zhuge, Mingchen and Fan, Deng-Ping and Liu, Nian and Zhang, Dingwen and Xu, Dong and Shao, Ling},
+  journal={arXiv preprint arXiv:2101.07663},
+  year={2021}
+}
 ```
 
