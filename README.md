@@ -47,6 +47,7 @@ sh run_eval.sh
 ## 3. Results
 
 ## 4. Others methods 
+![comp](comparison.png) 
 
 ## 5. Acknowledgement
 Some codes are borrowed from:
