@@ -2,14 +2,14 @@
 
 ## 1. 数据集与训练设置
 
-值得注意的是，一些早期模型因为训练设置的不统一，会产生混淆。所以，SOC的作者建议之后统一采用以下训练设置:
+值得注意的是，早期模型因为训练设置的不统一，会产生混淆。所以，SOC的作者建议之后统一采用以下训练设置:
 
 - (1) 同时使用train和val集合来训练，以获得最高效性能。 
-- (2) 除此之外，由于训练以及测试时，丢弃没有显著物体的图片(gt为空白)。
+- (2) 除此之外，训练、测试时，可以丢弃没有显著物体的图片(gt为空白)。
 
 基于以上建议，我们已经更新了训练集 (非空白图)，测试集 (8种特殊场景非空白图) 用来训练和评估SOC数据集。
 
-方便起见, 可以直接下载我们划分好 的SOC on [Baidu | 提取码: iqul ](https://pan.baidu.com/s/1kWebPUhCQOCsvvAouo7eGQ). 
+方便起见, 可通过 [百度网盘 | 提取码: iqul ](https://pan.baidu.com/s/1kWebPUhCQOCsvvAouo7eGQ)，直接下载我们划分好的SOC。然后像训练DUTS一样去训练SOC数据集。
 
 **If you download SOC on above link, you can ignore procedures below.**
 
