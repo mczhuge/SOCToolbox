@@ -2,7 +2,7 @@
 
 ## 1. Datasets and Training Setting
 
-Noted that, in our ICON (arXiv, 2021), we use the following setting:
+Noted that, in our [ICON (arXiv, 2021）](https://arxiv.org/pdf/2101.07663.pdf), we use the following setting:
 
 - Using both train and val set of SOC to train our model.
 - Dropping out images without salient objects for training and testing.
