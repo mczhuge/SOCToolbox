@@ -38,7 +38,7 @@ When your training process has done, you should generate the predictions of `SOC
 
 An alternative method is to generate all SOC-Test, then modify the `attr_categoty_and_generate_list.py` to automatively split your predicted saliency maps.
 
-After this, 
+After that, you can evaluate your performance on SOC in ~2 minutes. 
 
 ```
 sh run_eval.sh
