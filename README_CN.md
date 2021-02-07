@@ -38,7 +38,7 @@ python ./Test/SOC/attr_categoty_and_generate_list.py
 
 如果你训练已经完成, 需要生成`SOC-AC`, `SOC-BO`, `SOC-CL`, `SOC-HO`, `SOC-MB`, `SOC-OC`, `SOC-OV` 和 `SOC-SO` 对应的预测图。
 
-如果你很早就已经生成了所有的SOC-Test, 可以通过把 `Attributes` 文件夹添加至你的预测文件夹, 如 `Prediction/你的模型/SOC/Attributes` 然后稍微改动一下这个 `Prediction/*Your_Method**/SOC/attr_categoty_and_generate_list.py`里的路径, 就可以自动的划分8个属性的预测图到8个不同的文件夹。
+如果你很早就已经生成了所有的SOC-Test, 可以通过把 `Attributes` 文件夹添加至你的预测文件夹, 如 `Prediction/你的模型/SOC/Attributes` 然后稍微改动一下这个 `Prediction/你的模型/SOC/attr_categoty_and_generate_list.py`里的路径, 就可以自动的划分8个属性的预测图到8个不同的文件夹。
 
 然后, 你就可以开始评估了, 时长大约在2分钟左右.
 
