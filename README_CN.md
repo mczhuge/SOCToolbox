@@ -11,26 +11,28 @@
 
 方便起见, 可通过 [百度网盘 | 提取码: iqul ](https://pan.baidu.com/s/1kWebPUhCQOCsvvAouo7eGQ)，直接下载我们划分好的SOC。然后像训练DUTS一样去训练SOC数据集。
 
-**If you download SOC on above link, you can ignore procedures below.**
+**如果你通过以上链接下载SOC, 可直接忽略以下步骤.**
 
 ----
 
-(A) You can generates train.txt list which drops images without salient objects by
+你也可以参考如下方法，来获得与上边一样的数据集：
+
+(A) 生成 train.txt 列表，列表里的图片名称对应的图片都是包含显著物体的(非空白图)。
 
 
 ```
 python ./Train/SOC/drop_blank_and_generate_list.py 
 ```
 
-(B) You can segment 8 attributes of testing set and their test.txt by
+(B) 划分8个特殊类别并且生成它们对应的 test.txt 列表:
 
 ```
 python ./Test/SOC/attr_categoty_and_generate_list.py 
 ```
 
-Then 8 file folders will be generated, which are `./datasets/SOC/Test/SOC-AC`, `./datasets/SOC/Test/SOC-BO`, `./datasets/SOC/Test/SOC-CL`, `./datasets/SOC/Test/SOC-HO`, `./datasets/SOC/Test/SOC-MB`, `./datasets/SOC/Test/SOC-OC`, `./datasets/SOC/Test/SOC-OV`, `./datasets/SOC/Test/SOC-SO`. They contain the images and GTs of each category. 
+然后， 将会产生8个包含不同类别的划分文件夹，这一步很重要，因为划分好后的文件夹不仅利于 SOCToolbox 评估模型性能，也能方便您分析不同类别。产生的文件夹包含RGB images和对应GTs是依次是: `./datasets/SOC/Test/SOC-AC`, `./datasets/SOC/Test/SOC-BO`, `./datasets/SOC/Test/SOC-CL`, `./datasets/SOC/Test/SOC-HO`, `./datasets/SOC/Test/SOC-MB`, `./datasets/SOC/Test/SOC-OC`, `./datasets/SOC/Test/SOC-OV`, `./datasets/SOC/Test/SOC-SO`. 
 
-**Actually, we have already processed A and B if you download SOC from above link.** (If needing, the original SOC dataset can be found [here](https://dpfan.net/socbenchmark/) and you can do A and B yourself.)
+**实际上, 如果你是通过上述链接下载的SOC数据集，我们已经搞定了A,B两步骤.** (必要时, 你可以找到原始SOC数据集，在 [这里](https://dpfan.net/socbenchmark/)， 然后做上述A和B.)
 
 ## 2. Evaluation
 
