@@ -44,7 +44,7 @@ After that, you can evaluate your performance on SOC in ~2 minutes.
 sh run_eval.sh
 ```
 
-## 3. Results
+## 3. Results by SOCToolbox
 The saliency maps of ICON can be found in [Baidu | 提取码:bopg](https://pan.baidu.com/s/19XV19I_0gfAjx2gwcweZcw).
 
 ```
