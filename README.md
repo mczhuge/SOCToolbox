@@ -1,6 +1,6 @@
 # Efficient SOC Toolbox / [SOC快速评测工具(中文Readme)](https://github.com/mczhuge/SOCToolbox/edit/main/README_CN.md)
 
-## Datasets and Training Setting
+## 1. Datasets and Training Setting
 
 Noted that, some early methods have used different training setting, this may cause unfair comparisons. So, the author of SOC recommend to use these setting:
 
@@ -32,7 +32,7 @@ Then 8 file folders will be generated, which are `./datasets/SOC/Test/SOC-AC`, `
 
 **Actually, we have already processed A and B if you download SOC from above link.** (If needing, the original SOC dataset can be found [here](https://dpfan.net/socbenchmark/) and you can do A and B yourself.)
 
-## Evaluation
+## 2. Evaluation
 
 When your training process has done, you should generate the predictions of `SOC-AC`, `SOC-BO`, `SOC-CL`, `SOC-HO`, `SOC-MB`, `SOC-OC`, `SOC-OV` and `SOC-SO`, respectively.
 
