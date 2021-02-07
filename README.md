@@ -19,13 +19,13 @@ For a quick employment, you can download the updated SOC on [Baidu | 提取码: 
 
 
 ```
-python ./datataset/SOC/Train/drop_blank_and_generate_list.py 
+python ./Train/SOC/drop_blank_and_generate_list.py 
 ```
 
 (B) You can segment 8 attribute of testing set and their test.txt by
 
 ```
-python ./datasets/SOC/Test/attr_categoty_and_generate_list.py 
+python ./Test/SOC/attr_categoty_and_generate_list.py 
 ```
 
 Then 8 file folders will be generated, which are `./datasets/SOC/Test/SOC-AC`, `./datasets/SOC/Test/SOC-BO`, `./datasets/SOC/Test/SOC-CL`, `./datasets/SOC/Test/SOC-HO`, `./datasets/SOC/Test/SOC-MB`, `./datasets/SOC/Test/SOC-OC`, `./datasets/SOC/Test/SOC-OV`, `./datasets/SOC/Test/SOC-SO`. They contain the images and GTs of each category.
