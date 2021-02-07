@@ -2,7 +2,7 @@
 
 ## 1. Datasets and Training Setting
 
-Noted that, some early methods have used different training setting, this may cause unfair comparisons. So, the author of SOC recommend to use these setting:
+Noted that, some early methods have used different training settings, this may cause unfair comparisons. So, the author of SOC recommend to use these setting:
 
     1) using both train and val set to train your model. 
     2) besides, it is better to drop images without salient objects for training and testing.
