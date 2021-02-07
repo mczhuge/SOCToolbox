@@ -69,7 +69,7 @@ Comparison:
 ![comp](comparison.png) 
 
 ## 5. Acknowledgement
-Some codes are borrowed from:
+Some codes borrowed from:
 * <https://github.com/lartpang/PySODMetrics> 
 
 SOC results of other methods:
