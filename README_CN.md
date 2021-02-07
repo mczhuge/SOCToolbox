@@ -4,10 +4,10 @@
 
 值得注意的是，早期模型因为训练设置的不统一，会产生混淆。所以，SOC的作者建议之后统一采用以下训练设置:
 
-- (1) 同时使用train和val集合来训练，以获得最高效性能。 
-- (2) 除此之外，训练、测试时，可以丢弃没有显著物体的图片(gt为空白)。
+- (1) 同时使用train和val集合来训练, 以获得最高效性能. 
+- (2) 除此之外, 训练、测试时, 可以丢弃没有显著物体的图片(gt为空白).
 
-基于以上建议，我们已经更新了训练集 (非空白图)，测试集 (8种特殊场景非空白图) 用来训练和评估SOC数据集。
+基于以上建议, 我们已经更新了训练集 (非空白图), 测试集 (8种特殊场景非空白图) 用来训练和评估SOC数据集.
 
 方便起见, 可通过 [百度网盘 | 提取码: iqul ](https://pan.baidu.com/s/1kWebPUhCQOCsvvAouo7eGQ)，直接下载我们划分好的SOC。然后像训练DUTS一样去训练SOC数据集。
 
@@ -32,7 +32,7 @@ python ./Test/SOC/attr_categoty_and_generate_list.py
 
 然后， 将会产生8个包含不同类别的划分文件夹，这一步很重要，因为划分好后的文件夹不仅利于 SOCToolbox 评估模型性能，也能方便您分析不同类别。产生的文件夹包含RGB images和对应GTs是依次是: `./datasets/SOC/Test/SOC-AC`, `./datasets/SOC/Test/SOC-BO`, `./datasets/SOC/Test/SOC-CL`, `./datasets/SOC/Test/SOC-HO`, `./datasets/SOC/Test/SOC-MB`, `./datasets/SOC/Test/SOC-OC`, `./datasets/SOC/Test/SOC-OV`, `./datasets/SOC/Test/SOC-SO`. 
 
-**实际上, 如果你是通过上述链接下载的SOC数据集，我们已经搞定了A,B两步骤.** (必要时, 你可以找到原始SOC数据集，在 [这里](https://dpfan.net/socbenchmark/)， 然后做上述A和B.)
+**实际上, 如果你是通过上述链接下载的SOC数据集, 我们已经搞定了A,B两步骤.** (必要时, 你可以找到原始SOC数据集, 在 [这里](https://dpfan.net/socbenchmark/), 然后做上述A和B.)
 
 ## 2. Evaluation
 
