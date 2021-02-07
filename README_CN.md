@@ -2,12 +2,12 @@
 
 ## 1. 数据集与训练设置
 
-值得注意的是，之前的模型因为训练设置的不统一，会产生比较时的混淆。所以，我们咨询了SOC的作者，他建议今后统一采用以下训练设置:
+值得注意的是，在我们的ICON(arXiv, 2021), 我们采用了以下训练设置:
 
-- (1) 同时使用train和val集合来训练, 以获得最高效性能. 
-- (2) 除此之外, 训练、测试时, 可以丢弃没有显著物体的图片(gt为空白).
+- (1) 同时使用train和val集合来训练模型. 
+- (2) 除此之外, 训练、测试时, 丢弃没有显著物体的图片(gt为空白).
 
-基于以上建议, 我们已经更新了训练集 (非空白图), 测试集 (8种特殊属性的非空白图) 用来训练和评估SOC数据集.
+因此, 我们的训练集包含2400张非空白图, 测试集包含600张，8种属性的非空白图.
 
 方便起见, 可通过 [百度网盘 | 提取码: iqul ](https://pan.baidu.com/s/1kWebPUhCQOCsvvAouo7eGQ)，直接下载我们划分好的SOC。然后像训练DUTS一样去训练SOC数据集。
 
@@ -66,7 +66,7 @@ Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.816; wFmeasure:0.714; MAE:0
 
 如果你需要重新评估这些模型，或者其他的模型，可通过将`Attributes`文件夹放入预测文件夹，如`Prediction/MINet/SOC/Attributes`，然后稍微修改`Prediction/MINet/SOC/attr_categoty_and_generate_list.py`里的路径，即可自动划分8个属性。
 
-比较表格:
+虽然我们重新在SOC上训练了ICON, 为保证公平性，我们依然给出了直接用训练在DUTS上的参数来生成SOC的属性预测图:
 
 ![comp](comparison.png) 
 
