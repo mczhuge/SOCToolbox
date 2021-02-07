@@ -2,12 +2,12 @@
 
 ## 1. Datasets and Training Setting
 
-Noted that, some early methods have used different training settings, this may cause unfair comparisons. So, the author of SOC recommend to use these setting:
+Noted that, some early methods have used different training settings, this may cause unfair comparisons. In our ICON (arXiv, 2021), we recommend to use the following setting:
 
 - (1) using both train and val set of SOC to train your model. 
-- (2) besides, it is better to drop images without salient objects for training and testing.
+- (2) besides, we drop images without salient objects for training and testing.
 
-We have updated the Train (2400/4800 for training) / Test (8 attributes) setting following above suggestions. 
+Based on the above suggestions, our Training and Testing set are 2400 and 600, respectively.  
 
 For a quick employment, you can download the updated SOC on [Baidu | 提取码: iqul ](https://pan.baidu.com/s/1kWebPUhCQOCsvvAouo7eGQ). 
 
