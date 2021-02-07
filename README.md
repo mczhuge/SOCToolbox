@@ -7,7 +7,7 @@ Noted that, some early methods have used different training settings, this may c
 - (1) using both train and val set of SOC to train your model. 
 - (2) besides, it is better to drop images without salient objects for training and testing.
 
-We have updated the Train(2400)/Test(1200+8 attributes) setting following above suggestions. 
+We have updated the Train (2400/4800 for training) / Test (8 attributes) setting following above suggestions. 
 
 For a quick employment, you can download the updated SOC on [Baidu | 提取码: iqul ](https://pan.baidu.com/s/1kWebPUhCQOCsvvAouo7eGQ). 
 
