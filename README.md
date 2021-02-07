@@ -22,7 +22,7 @@ For a quick employment, you can download the updated SOC on [Baidu | 提取码: 
 python ./Train/SOC/drop_blank_and_generate_list.py 
 ```
 
-(B) You can segment 8 attribute of testing set and their test.txt by
+(B) You can segment 8 attributes of testing set and their test.txt by
 
 ```
 python ./Test/SOC/attr_categoty_and_generate_list.py 
