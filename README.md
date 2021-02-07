@@ -36,7 +36,7 @@ Then 8 file folders will be generated, which are `./datasets/SOC/Test/SOC-AC`, `
 
 When your training process has done, you should generate the predictions of `SOC-AC`, `SOC-BO`, `SOC-CL`, `SOC-HO`, `SOC-MB`, `SOC-OC`, `SOC-OV` and `SOC-SO`, respectively.
 
-When you have already generated all SOC-Test, an alternative method is to add `Attributes` files to prediction file, such as `Prediction/**Your_Method**/SOC/Attributes` then slightly modify the path in `Prediction/Your_Method/SOC/attr_categoty_and_generate_list.py` to automatively split your predicted saliency maps to 8 attributes.
+When you have already generated all SOC-Test, an alternative method is to add `Attributes` files to prediction file, such as `Prediction/**Your_Method**/SOC/Attributes` then slightly modify the path in `Prediction/*Your_Method**/SOC/attr_categoty_and_generate_list.py` to automatively split your predicted saliency maps to 8 attributes.
 
 
 After that, you can evaluate your performance on SOC in ~2 minutes. 
