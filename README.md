@@ -9,7 +9,7 @@ Noted that, some early methods have used different training setting, this may ca
 
 We have updated the Train(2400)/Test(1200+8 attributes) setting following above suggestions. 
 
-For a quick employment, you can download the updated SOC on [Baidu | ](). 
+For a quick employment, you can download the updated SOC on [Baidu | 提取码: iqul ](https://pan.baidu.com/s/1kWebPUhCQOCsvvAouo7eGQ). 
 
 **If you download SOC on above link, you can ignore procedures below.**
 
