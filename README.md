@@ -1,7 +1,6 @@
 # Efficient SOC Toolbox / [SOC快速评测工具(中文Readme)](https://github.com/mczhuge/SOCToolbox/edit/main/README_CN.md)
 
-## Datasets
-111
+## Datasets and Training Setting
 
 Noted that, some early methods have used different training setting, this may cause unfair comparisons. So, the author of SOC recommend to use these setting:
 
@@ -14,15 +13,13 @@ For a quick employment, you can download the updated SOC on [Baidu | ]().
 
 **If you download SOC on above link, you can ignore procedures below.**
 
-简而言之, 只需要从[Baidu | ]()下载事先处理好的SOC数据集, 然后像训练DUTS一样训练SOC, 以下步骤可直接忽略。若需自行处理, 可参考以下步骤对SOC数据集进行处理。A是找到GT为空白的图片,不放到train.txt中。B是对Test测试集的8大子类别拆分，方便针对各个类别进行评估。
-
 ----
 
 (A) You can generates train.txt list which drops images without salient objects by
 
 
 ```
-python ./datasets/SOC/Train/drop_blank_and_generate_list.py 
+python ./datataset/SOC/Train/drop_blank_and_generate_list.py 
 ```
 
 (B) You can segment 8 attribute of testing set and their test.txt by
@@ -37,9 +34,13 @@ Then 8 file folders will be generated, which are `./datasets/SOC/Test/SOC-AC`, `
 
 ## Evaluation
 
-When your training process has done, and you have generated the saliency predictions.
-```
-```
+When your training process has done, you should generate the predictions of `SOC-AC`, `SOC-BO`, `SOC-CL`, `SOC-HO`, `SOC-MB`, `SOC-OC`, `SOC-OV` and `SOC-SO`, respectively.
 
-`SOC-*` could be `SOC-AC`, `SOC-BO`, `SOC-CL`, `SOC-HO`, `SOC-MB`, `SOC-OC`, `SOC-OV`, `SOC-SO`.
+An alternative method is to generate all SOC-Test, then modify the `attr_categoty_and_generate_list.py` to automatively split your predicted saliency maps.
+
+After this, 
+
+```
+sh run_eval.sh
+```
 
