@@ -1,4 +1,4 @@
-# Efficient SOC Toolbox / [SOC快速评测工具(中文Readme)](https://github.com/mczhuge/SOCToolbox/edit/main/README_CN.md)
+# Efficient SOC Toolbox / [SOC快速评测工具(中文Readme)](README_CN.md)
 
 ## 1. Datasets and Training Setting
 
