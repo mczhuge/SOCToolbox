@@ -2,12 +2,12 @@
 
 ## 1. 数据集与训练设置
 
-值得注意的是，早期模型因为训练设置的不统一，会产生混淆。所以，SOC的作者建议之后统一采用以下训练设置:
+值得注意的是，之前的模型因为训练设置的不统一，会产生比较时的混淆。所以，我们咨询了SOC的作者，他建议今后统一采用以下训练设置:
 
 - (1) 同时使用train和val集合来训练, 以获得最高效性能. 
 - (2) 除此之外, 训练、测试时, 可以丢弃没有显著物体的图片(gt为空白).
 
-基于以上建议, 我们已经更新了训练集 (非空白图), 测试集 (8种特殊场景非空白图) 用来训练和评估SOC数据集.
+基于以上建议, 我们已经更新了训练集 (非空白图), 测试集 (8种特殊属性的非空白图) 用来训练和评估SOC数据集.
 
 方便起见, 可通过 [百度网盘 | 提取码: iqul ](https://pan.baidu.com/s/1kWebPUhCQOCsvvAouo7eGQ)，直接下载我们划分好的SOC。然后像训练DUTS一样去训练SOC数据集。
 
@@ -30,7 +30,7 @@ python ./Train/SOC/drop_blank_and_generate_list.py
 python ./Test/SOC/attr_categoty_and_generate_list.py 
 ```
 
-然后， 将会产生8个包含不同类别的划分文件夹，这一步很重要，因为划分好后的文件夹不仅利于 SOCToolbox 评估模型性能，也能方便您分析不同类别。产生的文件夹包含RGB images和对应GTs是依次是: `./datasets/SOC/Test/SOC-AC`, `./datasets/SOC/Test/SOC-BO`, `./datasets/SOC/Test/SOC-CL`, `./datasets/SOC/Test/SOC-HO`, `./datasets/SOC/Test/SOC-MB`, `./datasets/SOC/Test/SOC-OC`, `./datasets/SOC/Test/SOC-OV`, `./datasets/SOC/Test/SOC-SO`. 
+然后， 将会产生8个包含不同属性的划分文件夹，这一步很重要，因为划分好后的文件夹不仅利于 SOCToolbox 评估模型性能，也能方便您分析不同类别。产生的文件夹包含RGB images和对应GTs是依次是: `./datasets/SOC/Test/SOC-AC`, `./datasets/SOC/Test/SOC-BO`, `./datasets/SOC/Test/SOC-CL`, `./datasets/SOC/Test/SOC-HO`, `./datasets/SOC/Test/SOC-MB`, `./datasets/SOC/Test/SOC-OC`, `./datasets/SOC/Test/SOC-OV`, `./datasets/SOC/Test/SOC-SO`. 
 
 **实际上, 如果你是通过上述链接下载的SOC数据集, 我们已经搞定了A,B两步骤.** (必要时, 你可以找到原始SOC数据集, 在 [这里](https://dpfan.net/socbenchmark/), 然后做上述A和B.)
 
@@ -38,7 +38,7 @@ python ./Test/SOC/attr_categoty_and_generate_list.py
 
 如果你训练已经完成, 需要生成`SOC-AC`, `SOC-BO`, `SOC-CL`, `SOC-HO`, `SOC-MB`, `SOC-OC`, `SOC-OV` 和 `SOC-SO` 对应的预测图。
 
-如果你很早就已经生成了所有的SOC-Test, 可以通过把 `Attributes` 文件夹添加至你的预测文件夹, 如 `Prediction/你的模型/SOC/Attributes` 然后稍微改动一下这个 `Prediction/*Your_Method**/SOC/attr_categoty_and_generate_list.py`里的路径, 就可以自动的划分8个场景的预测图到8个不同的文件夹。
+如果你很早就已经生成了所有的SOC-Test, 可以通过把 `Attributes` 文件夹添加至你的预测文件夹, 如 `Prediction/你的模型/SOC/Attributes` 然后稍微改动一下这个 `Prediction/*Your_Method**/SOC/attr_categoty_and_generate_list.py`里的路径, 就可以自动的划分8个属性的预测图到8个不同的文件夹。
 
 然后, 你就可以开始评估了, 时长大约在2分钟左右.
 
@@ -64,20 +64,20 @@ Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.816; wFmeasure:0.714; MAE:0
 ## 4. 其他模型
 另外20种模型在SOC上的预测图可在 [百度网盘|提取码: z3fq](https://pan.baidu.com/s/1eGGokt33eaZGsJ5n5VRt4Q)下载: [DSS](https://openaccess.thecvf.com/content_cvpr_2017/papers/Hou_Deeply_Supervised_Salient_CVPR_2017_paper.pdf)、[NLDF](https://openaccess.thecvf.com/content_cvpr_2017/papers/Luo_Non-Local_Deep_Features_CVPR_2017_paper.pdf)、[SRM](https://openaccess.thecvf.com/content_ICCV_2017/papers/Wang_A_Stagewise_Refinement_ICCV_2017_paper.pdf)、[Amulet](https://openaccess.thecvf.com/content_ICCV_2017/papers/Zhang_Amulet_Aggregating_Multi-Level_ICCV_2017_paper.pdf)、[DGRL](https://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Detect_Globally_Refine_CVPR_2018_paper.pdf)、[BMPM](https://openaccess.thecvf.com/content_cvpr_2018/papers_backup/Zhang_A_Bi-Directional_Message_CVPR_2018_paper.pdf)、[PiCANet-R](https://openaccess.thecvf.com/content_cvpr_2018/papers/Liu_PiCANet_Learning_Pixel-Wise_CVPR_2018_paper.pdf)、[R3Net](https://www.ijcai.org/Proceedings/2018/0095.pdf)、[C2S-Net](https://openaccess.thecvf.com/content_ECCV_2018/papers/Xin_Li_Contour_Knowledge_Transfer_ECCV_2018_paper.pdf)、[RANet](https://openaccess.thecvf.com/content_ECCV_2018/papers/Shuhan_Chen_Reverse_Attention_for_ECCV_2018_paper.pdf)、[CPD](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wu_Cascaded_Partial_Decoder_for_Fast_and_Accurate_Salient_Object_Detection_CVPR_2019_paper.pdf)、[AFN](https://openaccess.thecvf.com/content_CVPR_2019/papers/Feng_Attentive_Feedback_Network_for_Boundary-Aware_Salient_Object_Detection_CVPR_2019_paper.pdf)、[BASNet](https://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_BASNet_Boundary-Aware_Salient_Object_Detection_CVPR_2019_paper.pdf)、[PoolNet](https://openaccess.thecvf.com/content_CVPR_2019/papers/Liu_A_Simple_Pooling-Based_Design_for_Real-Time_Salient_Object_Detection_CVPR_2019_paper.pdf)、[SCRN](https://openaccess.thecvf.com/content_ICCV_2019/papers/Wu_Stacked_Cross_Refinement_Network_for_Edge-Aware_Salient_Object_Detection_ICCV_2019_paper.pdf)、[SIBA](https://openaccess.thecvf.com/content_ICCV_2019/papers/Su_Selectivity_or_Invariance_Boundary-Aware_Salient_Object_Detection_ICCV_2019_paper.pdf)、[EGNet](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhao_EGNet_Edge_Guidance_Network_for_Salient_Object_Detection_ICCV_2019_paper.pdf)、[F3Net](https://aaai.org/ojs/index.php/AAAI/article/view/6916)、[GCPANet](https://aaai.org/ojs/index.php/AAAI/article/view/6633)、[MINet](https://openaccess.thecvf.com/content_CVPR_2020/papers/Pang_Multi-Scale_Interactive_Network_for_Salient_Object_Detection_CVPR_2020_paper.pdf).
 
-If you want to re-evaluate these methods by using SOCToolbox, please add `Attributes` files to prediction file, such as `Prediction/MINet/SOC/Attributes` and  slightly modify the path in `Prediction/MINet/SOC/attr_categoty_and_generate_list.py` to automatively split 8 attributes.
+如果你需要重新评估这些模型，或者其他的模型，可通过将`Attributes`文件夹放入预测文件夹，如`Prediction/MINet/SOC/Attributes`，然后稍微修改`Prediction/MINet/SOC/attr_categoty_and_generate_list.py`里的路径，即可自动划分8个属性。
 
-Comparison:
+比较表格:
 
 ![comp](comparison.png) 
 
-## 5. Acknowledgement
-Some codes are borrowed from:
+## 5. 致谢
+一些代码参考自:
 * <https://github.com/lartpang/PySODMetrics> 
 
-SOC results of other methods:
+其它模型的SOC预测图来自:
 * <https://github.com/wuzhe71/SCRN> 
 
-## Reference
+## 引用
 
 ```text
 @inproceedings{Smeasure,
