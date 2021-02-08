@@ -66,7 +66,7 @@ Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.816; wFmeasure:0.714; MAE:0
 
 如果你需要重新评估这些模型，或者其他的模型，可通过将`Attributes`文件夹放入预测文件夹，如`Prediction/MINet/SOC/Attributes`，然后稍微修改`Prediction/MINet/SOC/attr_categoty_and_generate_list.py`里的路径，即可自动划分8个属性。
 
-比较表格(我们也展示了用训练在DUTS上的参数生成的SOC预测显著图的效果):
+比较表格(公平起见，我们也展示了用训练在DUTS上的参数生成的SOC预测显著图的效果):
 
 ![comp](comparison.png) 
 
