@@ -78,6 +78,14 @@ SOC results of other methods:
 ## Reference
 
 ```text
+@inproceedings{fan2018salient,
+  title={Salient objects in clutter: Bringing salient object detection to the foreground},
+  author={Fan, Deng-Ping and Cheng, Ming-Ming and Liu, Jiang-Jiang and Gao, Shang-Hua and Hou, Qibin and Borji, Ali},
+  booktitle={Proceedings of the European conference on computer vision (ECCV)},
+  pages={186--202},
+  year={2018}
+}
+
 @inproceedings{Smeasure,
     title={Structure-measure: A new way to evaluate foreground maps},
     author={Fan, Deng-Ping and Cheng, Ming-Ming and Liu, Yun and Li, Tao and Borji, Ali},
