@@ -48,6 +48,25 @@ sh run_eval.sh
 ## 3. Results by SOCToolbox
 The saliency maps of ICON can be found in [Baidu | 提取码:bopg](https://pan.baidu.com/s/19XV19I_0gfAjx2gwcweZcw).
 
+Tranined on DUTS, evaluate on SOC-Attr(8 attributes, 600 pics)
+```
+Method:ICON,Dataset:SOC,Attribute:SOC-AC||Smeasure:0.832; wFmeasure:0.767; MAE:0.066; adpEm:0.872; meanEm:0.885; maxEm:0.895; adpFm:0.782; meanFm:0.793; maxFm:0.814
+Method:ICON,Dataset:SOC,Attribute:SOC-BO||Smeasure:0.75; wFmeasure:0.841; MAE:0.166; adpEm:0.664; meanEm:0.784; maxEm:0.838; adpFm:0.833; meanFm:0.892; maxFm:0.914
+Method:ICON,Dataset:SOC,Attribute:SOC-CL||Smeasure:0.792; wFmeasure:0.733; MAE:0.113; adpEm:0.821; meanEm:0.828; maxEm:0.833; adpFm:0.762; meanFm:0.767; maxFm:0.777
+Method:ICON,Dataset:SOC,Attribute:SOC-HO||Smeasure:0.826; wFmeasure:0.763; MAE:0.091; adpEm:0.851; meanEm:0.854; maxEm:0.866; adpFm:0.788; meanFm:0.792; maxFm:0.815
+Method:ICON,Dataset:SOC,Attribute:SOC-MB||Smeasure:0.783; wFmeasure:0.697; MAE:0.095; adpEm:0.813; meanEm:0.821; maxEm:0.834; adpFm:0.729; meanFm:0.738; maxFm:0.76
+Method:ICON,Dataset:SOC,Attribute:SOC-OC||Smeasure:0.784; wFmeasure:0.704; MAE:0.103; adpEm:0.816; meanEm:0.821; maxEm:0.836; adpFm:0.739; meanFm:0.743; maxFm:0.765
+Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.784; wFmeasure:0.75; MAE:0.117; adpEm:0.824; meanEm:0.833; maxEm:0.84; adpFm:0.789; meanFm:0.792; maxFm:0.806
+Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.769; wFmeasure:0.643; MAE:0.087; adpEm:0.803; meanEm:0.809; maxEm:0.828; adpFm:0.662; meanFm:0.677; maxFm:0.71
+
+```
+
+Tranined on DUTS, evaluate on SOC-Test(1200 pics)
+```
+Method:ICON,Dataset:SOC-Test(1200),Attribute:SOC-1200||Smeasure:0.767; wFmeasure:0.347; MAE:0.173; adpEm:0.839; meanEm:0.784; maxEm:0.873; adpFm:0.359; meanFm:0.363; maxFm:0.378
+```
+
+Trained on SOC-Sal-Train_and_Val(2400 pics), evaluate on SOC-Attr(8 attributes, 600 pics).
 ```
 Method:ICON,Dataset:SOC,Attribute:SOC-AC||Smeasure:0.84; wFmeasure:0.778; MAE:0.062; adpEm:0.89; meanEm:0.885; maxEm:0.894; adpFm:0.803; meanFm:0.806; maxFm:0.822
 Method:ICON,Dataset:SOC,Attribute:SOC-BO||Smeasure:0.7; wFmeasure:0.762; MAE:0.216; adpEm:0.599; meanEm:0.725; maxEm:0.787; adpFm:0.739; meanFm:0.811; maxFm:0.862
@@ -58,6 +77,8 @@ Method:ICON,Dataset:SOC,Attribute:SOC-OC||Smeasure:0.813; wFmeasure:0.742; MAE:0
 Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.826; wFmeasure:0.801; MAE:0.089; adpEm:0.86; meanEm:0.872; maxEm:0.88; adpFm:0.833; meanFm:0.833; maxFm:0.844
 Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.816; wFmeasure:0.714; MAE:0.061; adpEm:0.869; meanEm:0.873; maxEm:0.884; adpFm:0.734; meanFm:0.745; maxFm:0.766
 ```
+
+Trained on SOC-Sal-Train(1800 pics), evaluate on SOC-Attr(8 attributes, 600 pics).
 
 ## 4. Others methods 
 Others 20 SOD methods on SOC dataset can be found on [baidu yun](https://pan.baidu.com/s/1eGGokt33eaZGsJ5n5VRt4Q) (code: z3fq): [DSS](https://openaccess.thecvf.com/content_cvpr_2017/papers/Hou_Deeply_Supervised_Salient_CVPR_2017_paper.pdf)、[NLDF](https://openaccess.thecvf.com/content_cvpr_2017/papers/Luo_Non-Local_Deep_Features_CVPR_2017_paper.pdf)、[SRM](https://openaccess.thecvf.com/content_ICCV_2017/papers/Wang_A_Stagewise_Refinement_ICCV_2017_paper.pdf)、[Amulet](https://openaccess.thecvf.com/content_ICCV_2017/papers/Zhang_Amulet_Aggregating_Multi-Level_ICCV_2017_paper.pdf)、[DGRL](https://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Detect_Globally_Refine_CVPR_2018_paper.pdf)、[BMPM](https://openaccess.thecvf.com/content_cvpr_2018/papers_backup/Zhang_A_Bi-Directional_Message_CVPR_2018_paper.pdf)、[PiCANet-R](https://openaccess.thecvf.com/content_cvpr_2018/papers/Liu_PiCANet_Learning_Pixel-Wise_CVPR_2018_paper.pdf)、[R3Net](https://www.ijcai.org/Proceedings/2018/0095.pdf)、[C2S-Net](https://openaccess.thecvf.com/content_ECCV_2018/papers/Xin_Li_Contour_Knowledge_Transfer_ECCV_2018_paper.pdf)、[RANet](https://openaccess.thecvf.com/content_ECCV_2018/papers/Shuhan_Chen_Reverse_Attention_for_ECCV_2018_paper.pdf)、[CPD](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wu_Cascaded_Partial_Decoder_for_Fast_and_Accurate_Salient_Object_Detection_CVPR_2019_paper.pdf)、[AFN](https://openaccess.thecvf.com/content_CVPR_2019/papers/Feng_Attentive_Feedback_Network_for_Boundary-Aware_Salient_Object_Detection_CVPR_2019_paper.pdf)、[BASNet](https://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_BASNet_Boundary-Aware_Salient_Object_Detection_CVPR_2019_paper.pdf)、[PoolNet](https://openaccess.thecvf.com/content_CVPR_2019/papers/Liu_A_Simple_Pooling-Based_Design_for_Real-Time_Salient_Object_Detection_CVPR_2019_paper.pdf)、[SCRN](https://openaccess.thecvf.com/content_ICCV_2019/papers/Wu_Stacked_Cross_Refinement_Network_for_Edge-Aware_Salient_Object_Detection_ICCV_2019_paper.pdf)、[SIBA](https://openaccess.thecvf.com/content_ICCV_2019/papers/Su_Selectivity_or_Invariance_Boundary-Aware_Salient_Object_Detection_ICCV_2019_paper.pdf)、[EGNet](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhao_EGNet_Edge_Guidance_Network_for_Salient_Object_Detection_ICCV_2019_paper.pdf)、[F3Net](https://aaai.org/ojs/index.php/AAAI/article/view/6916)、[GCPANet](https://aaai.org/ojs/index.php/AAAI/article/view/6633)、[MINet](https://openaccess.thecvf.com/content_CVPR_2020/papers/Pang_Multi-Scale_Interactive_Network_for_Salient_Object_Detection_CVPR_2020_paper.pdf).
