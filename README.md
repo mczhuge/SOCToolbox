@@ -80,7 +80,13 @@ Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.816; wFmeasure:0.714; MAE:0
 
 Trained on SOC-Sal-Train(1800 pics), evaluated on SOC-Attr(8 attributes, 600 pics).
 ```
-Wait for some hours.
+Method:ICON,Dataset:SOC,Attribute:SOC-AC||Smeasure:0.834; wFmeasure:0.774; MAE:0.067; adpEm:0.868; meanEm:0.891; maxEm:0.905; adpFm:0.781; meanFm:0.807; maxFm:0.827
+Method:ICON,Dataset:SOC,Attribute:SOC-BO||Smeasure:0.718; wFmeasure:0.78; MAE:0.203; adpEm:0.421; meanEm:0.746; maxEm:0.781; adpFm:0.58; meanFm:0.825; maxFm:0.847
+Method:ICON,Dataset:SOC,Attribute:SOC-CL||Smeasure:0.828; wFmeasure:0.774; MAE:0.092; adpEm:0.822; meanEm:0.868; maxEm:0.879; adpFm:0.778; meanFm:0.809; maxFm:0.827
+Method:ICON,Dataset:SOC,Attribute:SOC-HO||Smeasure:0.834; wFmeasure:0.769; MAE:0.085; adpEm:0.857; meanEm:0.868; maxEm:0.882; adpFm:0.793; meanFm:0.802; maxFm:0.822
+Method:ICON,Dataset:SOC,Attribute:SOC-MB||Smeasure:0.815; wFmeasure:0.746; MAE:0.079; adpEm:0.813; meanEm:0.853; maxEm:0.865; adpFm:0.754; meanFm:0.784; maxFm:0.808
+Method:ICON,Dataset:SOC,Attribute:SOC-OC||Smeasure:0.786; wFmeasure:0.7; MAE:0.097; adpEm:0.816; meanEm:0.84; maxEm:0.856; adpFm:0.73; meanFm:0.743; maxFm:0.765
+Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.807; wFmeasure:0.769; MAE:0.103; adpEm:0.802; meanEm:0.851; maxEm:0.862; adpFm:0.779; meanFm:0.808; maxFm:0.822
 ```
 
 ## 4. Others methods 
