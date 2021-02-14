@@ -38,7 +38,7 @@ python ./Test/SOC/attr_categoty_and_generate_list.py
 
 如果你训练已经完成, 需要生成`SOC-AC`, `SOC-BO`, `SOC-CL`, `SOC-HO`, `SOC-MB`, `SOC-OC`, `SOC-OV` 和 `SOC-SO` 对应的预测图。
 
-如果你很早就已经生成了所有的SOC-Test, 可以通过把 `Attributes` 文件夹添加至你的预测文件夹, 如 `Prediction/你的模型/SOC/Attributes` 然后稍微改动一下这个 `Prediction/你的模型/SOC/attr_categoty_and_generate_list.py`里的路径, 就可以自动的划分8个属性的预测图到8个不同的文件夹。
+如果你很早就已经生成了所有的SOC-Test, 可以通过把 `Attributes` 文件夹添加至你的预测文件夹, 如 `Prediction/你的模型/SOC/Attributes` 然后稍微改动一下这个 `Prediction/你的模型/SOC/attr_categoty_and_generate_list.py`里的路径, 就可以自动的划分8个属性的预测图到9个不同的文件夹。
 
 然后, 你就可以开始评估了, 时长大约在2分钟左右.
 
@@ -51,7 +51,7 @@ sh run_eval.sh
 
 以下为使用SOCToolbox评估的结果:
 
-Tranined on DUTS, evaluated on SOC-Attr(8 attributes, 600 pics)
+Tranined on DUTS, evaluated on SOC-Attr(9 attributes, 600 pics)
 ```
 Method:ICON,Dataset:SOC,Attribute:SOC-AC||Smeasure:0.832; wFmeasure:0.767; MAE:0.066; adpEm:0.872; meanEm:0.885; maxEm:0.895; adpFm:0.782; meanFm:0.793; maxFm:0.814
 Method:ICON,Dataset:SOC,Attribute:SOC-BO||Smeasure:0.75; wFmeasure:0.841; MAE:0.166; adpEm:0.664; meanEm:0.784; maxEm:0.838; adpFm:0.833; meanFm:0.892; maxFm:0.914
@@ -69,7 +69,7 @@ Tranined on DUTS, evaluated on SOC-Test(1200 pics)
 Method:ICON,Dataset:SOC,Attribute:SOC-1200||Smeasure:0.811; wFmeasure:0.347; MAE:0.128; adpEm:0.812; meanEm:0.828; maxEm:0.896; adpFm:0.359; meanFm:0.363; maxFm:0.378
 ```
 
-Trained on SOC-Sal-Train_and_Val(2400 pics), evaluated on SOC-Attr(8 attributes, 600 pics).
+Trained on SOC-Sal-Train_and_Val(2400 pics), evaluated on SOC-Attr(9 attributes, 600 pics).
 ```
 Method:ICON,Dataset:SOC,Attribute:SOC-AC||Smeasure:0.84; wFmeasure:0.778; MAE:0.062; adpEm:0.89; meanEm:0.885; maxEm:0.894; adpFm:0.803; meanFm:0.806; maxFm:0.822
 Method:ICON,Dataset:SOC,Attribute:SOC-BO||Smeasure:0.7; wFmeasure:0.762; MAE:0.216; adpEm:0.599; meanEm:0.725; maxEm:0.787; adpFm:0.739; meanFm:0.811; maxFm:0.862
@@ -81,7 +81,7 @@ Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.826; wFmeasure:0.801; MAE:0
 Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.816; wFmeasure:0.714; MAE:0.061; adpEm:0.869; meanEm:0.873; maxEm:0.884; adpFm:0.734; meanFm:0.745; maxFm:0.766
 ```
 
-Trained on SOC-Sal-Train(1800 pics), evaluated on SOC-Attr(8 attributes, 600 pics).
+Trained on SOC-Sal-Train(1800 pics), evaluated on SOC-Attr(9 attributes, 600 pics).
 ```
 Method:ICON,Dataset:SOC,Attribute:SOC-AC||Smeasure:0.834; wFmeasure:0.774; MAE:0.067; adpEm:0.868; meanEm:0.891; maxEm:0.905; adpFm:0.781; meanFm:0.807; maxFm:0.827
 Method:ICON,Dataset:SOC,Attribute:SOC-BO||Smeasure:0.718; wFmeasure:0.78; MAE:0.203; adpEm:0.421; meanEm:0.746; maxEm:0.781; adpFm:0.58; meanFm:0.825; maxFm:0.847
@@ -95,7 +95,7 @@ Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.807; wFmeasure:0.769; MAE:0
 ## 4. 其他模型
 另外20种模型在SOC上的预测图可在 [百度网盘|提取码: z3fq](https://pan.baidu.com/s/1eGGokt33eaZGsJ5n5VRt4Q)下载: [DSS](https://openaccess.thecvf.com/content_cvpr_2017/papers/Hou_Deeply_Supervised_Salient_CVPR_2017_paper.pdf)、[NLDF](https://openaccess.thecvf.com/content_cvpr_2017/papers/Luo_Non-Local_Deep_Features_CVPR_2017_paper.pdf)、[SRM](https://openaccess.thecvf.com/content_ICCV_2017/papers/Wang_A_Stagewise_Refinement_ICCV_2017_paper.pdf)、[Amulet](https://openaccess.thecvf.com/content_ICCV_2017/papers/Zhang_Amulet_Aggregating_Multi-Level_ICCV_2017_paper.pdf)、[DGRL](https://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Detect_Globally_Refine_CVPR_2018_paper.pdf)、[BMPM](https://openaccess.thecvf.com/content_cvpr_2018/papers_backup/Zhang_A_Bi-Directional_Message_CVPR_2018_paper.pdf)、[PiCANet-R](https://openaccess.thecvf.com/content_cvpr_2018/papers/Liu_PiCANet_Learning_Pixel-Wise_CVPR_2018_paper.pdf)、[R3Net](https://www.ijcai.org/Proceedings/2018/0095.pdf)、[C2S-Net](https://openaccess.thecvf.com/content_ECCV_2018/papers/Xin_Li_Contour_Knowledge_Transfer_ECCV_2018_paper.pdf)、[RANet](https://openaccess.thecvf.com/content_ECCV_2018/papers/Shuhan_Chen_Reverse_Attention_for_ECCV_2018_paper.pdf)、[CPD](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wu_Cascaded_Partial_Decoder_for_Fast_and_Accurate_Salient_Object_Detection_CVPR_2019_paper.pdf)、[AFN](https://openaccess.thecvf.com/content_CVPR_2019/papers/Feng_Attentive_Feedback_Network_for_Boundary-Aware_Salient_Object_Detection_CVPR_2019_paper.pdf)、[BASNet](https://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_BASNet_Boundary-Aware_Salient_Object_Detection_CVPR_2019_paper.pdf)、[PoolNet](https://openaccess.thecvf.com/content_CVPR_2019/papers/Liu_A_Simple_Pooling-Based_Design_for_Real-Time_Salient_Object_Detection_CVPR_2019_paper.pdf)、[SCRN](https://openaccess.thecvf.com/content_ICCV_2019/papers/Wu_Stacked_Cross_Refinement_Network_for_Edge-Aware_Salient_Object_Detection_ICCV_2019_paper.pdf)、[SIBA](https://openaccess.thecvf.com/content_ICCV_2019/papers/Su_Selectivity_or_Invariance_Boundary-Aware_Salient_Object_Detection_ICCV_2019_paper.pdf)、[EGNet](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhao_EGNet_Edge_Guidance_Network_for_Salient_Object_Detection_ICCV_2019_paper.pdf)、[F3Net](https://aaai.org/ojs/index.php/AAAI/article/view/6916)、[GCPANet](https://aaai.org/ojs/index.php/AAAI/article/view/6633)、[MINet](https://openaccess.thecvf.com/content_CVPR_2020/papers/Pang_Multi-Scale_Interactive_Network_for_Salient_Object_Detection_CVPR_2020_paper.pdf).
 
-如果你需要重新评估这些模型，或者其他的模型，可通过将`Attributes`文件夹放入预测文件夹，如`Prediction/MINet/SOC/Attributes`，然后稍微修改`Prediction/MINet/SOC/attr_categoty_and_generate_list.py`里的路径，即可自动划分8个属性。
+如果你需要重新评估这些模型，或者其他的模型，可通过将`Attributes`文件夹放入预测文件夹，如`Prediction/MINet/SOC/Attributes`，然后稍微修改`Prediction/MINet/SOC/attr_categoty_and_generate_list.py`里的路径，即可自动划分9个属性。
 
 比较表格(公平起见，我们也展示了用训练在DUTS上的参数生成的SOC预测显著图的效果):
 
