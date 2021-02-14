@@ -60,6 +60,7 @@ Method:ICON,Dataset:SOC,Attribute:SOC-HO||Smeasure:0.826; wFmeasure:0.763; MAE:0
 Method:ICON,Dataset:SOC,Attribute:SOC-MB||Smeasure:0.783; wFmeasure:0.697; MAE:0.095; adpEm:0.813; meanEm:0.821; maxEm:0.834; adpFm:0.729; meanFm:0.738; maxFm:0.76
 Method:ICON,Dataset:SOC,Attribute:SOC-OC||Smeasure:0.784; wFmeasure:0.704; MAE:0.103; adpEm:0.816; meanEm:0.821; maxEm:0.836; adpFm:0.739; meanFm:0.743; maxFm:0.765
 Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.784; wFmeasure:0.75; MAE:0.117; adpEm:0.824; meanEm:0.833; maxEm:0.84; adpFm:0.789; meanFm:0.792; maxFm:0.806
+Method:ICON,Dataset:SOC,Attribute:SOC-SC||Smeasure:0.81; wFmeasure:0.721; MAE:0.079; adpEm:0.852; meanEm:0.856; maxEm:0.873; adpFm:0.728; meanFm:0.746; maxFm:0.782
 Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.769; wFmeasure:0.643; MAE:0.087; adpEm:0.803; meanEm:0.809; maxEm:0.828; adpFm:0.662; meanFm:0.677; maxFm:0.71
 
 ```
