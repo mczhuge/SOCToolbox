@@ -78,6 +78,7 @@ Method:ICON,Dataset:SOC,Attribute:SOC-HO||Smeasure:0.841; wFmeasure:0.785; MAE:0
 Method:ICON,Dataset:SOC,Attribute:SOC-MB||Smeasure:0.82; wFmeasure:0.746; MAE:0.072; adpEm:0.846; meanEm:0.862; maxEm:0.87; adpFm:0.772; meanFm:0.781; maxFm:0.794
 Method:ICON,Dataset:SOC,Attribute:SOC-OC||Smeasure:0.813; wFmeasure:0.742; MAE:0.086; adpEm:0.847; meanEm:0.859; maxEm:0.873; adpFm:0.775; meanFm:0.78; maxFm:0.8
 Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.826; wFmeasure:0.801; MAE:0.089; adpEm:0.86; meanEm:0.872; maxEm:0.88; adpFm:0.833; meanFm:0.833; maxFm:0.844
+Method:ICON,Dataset:SOC,Attribute:SOC-SC||Smeasure:0.834; wFmeasure:0.753; MAE:0.059; adpEm:0.895; meanEm:0.893; maxEm:0.906; adpFm:0.773; meanFm:0.779; maxFm:0.8
 Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.816; wFmeasure:0.714; MAE:0.061; adpEm:0.869; meanEm:0.873; maxEm:0.884; adpFm:0.734; meanFm:0.745; maxFm:0.766
 ```
 
@@ -90,6 +91,8 @@ Method:ICON,Dataset:SOC,Attribute:SOC-HO||Smeasure:0.834; wFmeasure:0.769; MAE:0
 Method:ICON,Dataset:SOC,Attribute:SOC-MB||Smeasure:0.815; wFmeasure:0.746; MAE:0.079; adpEm:0.813; meanEm:0.853; maxEm:0.865; adpFm:0.754; meanFm:0.784; maxFm:0.808
 Method:ICON,Dataset:SOC,Attribute:SOC-OC||Smeasure:0.786; wFmeasure:0.7; MAE:0.097; adpEm:0.816; meanEm:0.84; maxEm:0.856; adpFm:0.73; meanFm:0.743; maxFm:0.765
 Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.807; wFmeasure:0.769; MAE:0.103; adpEm:0.802; meanEm:0.851; maxEm:0.862; adpFm:0.779; meanFm:0.808; maxFm:0.822
+Method:ICON,Dataset:SOC,Attribute:SOC-SC||Smeasure:0.819; wFmeasure:0.73; MAE:0.068; adpEm:0.867; meanEm:0.884; maxEm:0.903; adpFm:0.736; meanFm:0.759; maxFm:0.797
+Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.796; wFmeasure:0.675; MAE:0.071; adpEm:0.829; meanEm:0.848; maxEm:0.869; adpFm:0.69; meanFm:0.712; maxFm:0.745
 ```
 
 ## 4. 其他模型
