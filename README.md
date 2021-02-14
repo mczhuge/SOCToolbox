@@ -48,7 +48,7 @@ sh run_eval.sh
 ## 3. Results by SOCToolbox
 The saliency maps of ICON can be found in [Baidu | 提取码:bopg](https://pan.baidu.com/s/19XV19I_0gfAjx2gwcweZcw).
 
-Tranined on DUTS, evaluate on SOC-Attr(8 attributes, 600 pics)
+Tranined on DUTS, evaluated on SOC-Attr(8 attributes, 600 pics)
 ```
 Method:ICON,Dataset:SOC,Attribute:SOC-AC||Smeasure:0.832; wFmeasure:0.767; MAE:0.066; adpEm:0.872; meanEm:0.885; maxEm:0.895; adpFm:0.782; meanFm:0.793; maxFm:0.814
 Method:ICON,Dataset:SOC,Attribute:SOC-BO||Smeasure:0.75; wFmeasure:0.841; MAE:0.166; adpEm:0.664; meanEm:0.784; maxEm:0.838; adpFm:0.833; meanFm:0.892; maxFm:0.914
@@ -61,12 +61,12 @@ Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.769; wFmeasure:0.643; MAE:0
 
 ```
 
-Tranined on DUTS, evaluate on SOC-Test(1200 pics)
+Tranined on DUTS, evaluated on SOC-Test(1200 pics)
 ```
 Method:ICON,Dataset:SOC-Test(1200),Attribute:SOC-1200||Smeasure:0.767; wFmeasure:0.347; MAE:0.173; adpEm:0.839; meanEm:0.784; maxEm:0.873; adpFm:0.359; meanFm:0.363; maxFm:0.378
 ```
 
-Trained on SOC-Sal-Train_and_Val(2400 pics), evaluate on SOC-Attr(8 attributes, 600 pics).
+Trained on SOC-Sal-Train_and_Val(2400 pics), evaluated on SOC-Attr(8 attributes, 600 pics).
 ```
 Method:ICON,Dataset:SOC,Attribute:SOC-AC||Smeasure:0.84; wFmeasure:0.778; MAE:0.062; adpEm:0.89; meanEm:0.885; maxEm:0.894; adpFm:0.803; meanFm:0.806; maxFm:0.822
 Method:ICON,Dataset:SOC,Attribute:SOC-BO||Smeasure:0.7; wFmeasure:0.762; MAE:0.216; adpEm:0.599; meanEm:0.725; maxEm:0.787; adpFm:0.739; meanFm:0.811; maxFm:0.862
@@ -78,7 +78,7 @@ Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.826; wFmeasure:0.801; MAE:0
 Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.816; wFmeasure:0.714; MAE:0.061; adpEm:0.869; meanEm:0.873; maxEm:0.884; adpFm:0.734; meanFm:0.745; maxFm:0.766
 ```
 
-Trained on SOC-Sal-Train(1800 pics), evaluate on SOC-Attr(8 attributes, 600 pics).
+Trained on SOC-Sal-Train(1800 pics), evaluated on SOC-Attr(8 attributes, 600 pics).
 ```
 Wait for some hours.
 ```
