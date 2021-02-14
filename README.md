@@ -63,7 +63,7 @@ Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.769; wFmeasure:0.643; MAE:0
 
 Tranined on DUTS, evaluated on SOC-Test(1200 pics)
 ```
-Method:ICON,Dataset:SOC-Test(1200),Attribute:SOC-1200||Smeasure:0.767; wFmeasure:0.347; MAE:0.173; adpEm:0.839; meanEm:0.784; maxEm:0.873; adpFm:0.359; meanFm:0.363; maxFm:0.378
+Method:ICON,Dataset:SOC,Attribute:SOC-1200||Smeasure:0.809; wFmeasure:0.346; MAE:0.131; adpEm:0.853; meanEm:0.826; maxEm:0.895; adpFm:0.359; meanFm:0.363; maxFm:0.378
 ```
 
 Trained on SOC-Sal-Train_and_Val(2400 pics), evaluated on SOC-Attr(8 attributes, 600 pics).
