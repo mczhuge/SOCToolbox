@@ -48,7 +48,7 @@ sh run_eval.sh
 ## 3. Results by SOCToolbox
 The saliency maps of ICON can be found in [Baidu | 提取码:bopg](https://pan.baidu.com/s/19XV19I_0gfAjx2gwcweZcw).
 
-Tranined on DUTS, evaluated on SOC-Attr(8 attributes, 600 pics)
+Tranined on DUTS, evaluated on SOC-Attr(9 attributes, 600 pics)
 ```
 Method:ICON,Dataset:SOC,Attribute:SOC-AC||Smeasure:0.832; wFmeasure:0.767; MAE:0.066; adpEm:0.872; meanEm:0.885; maxEm:0.895; adpFm:0.782; meanFm:0.793; maxFm:0.814
 Method:ICON,Dataset:SOC,Attribute:SOC-BO||Smeasure:0.75; wFmeasure:0.841; MAE:0.166; adpEm:0.664; meanEm:0.784; maxEm:0.838; adpFm:0.833; meanFm:0.892; maxFm:0.914
@@ -57,16 +57,17 @@ Method:ICON,Dataset:SOC,Attribute:SOC-HO||Smeasure:0.826; wFmeasure:0.763; MAE:0
 Method:ICON,Dataset:SOC,Attribute:SOC-MB||Smeasure:0.783; wFmeasure:0.697; MAE:0.095; adpEm:0.813; meanEm:0.821; maxEm:0.834; adpFm:0.729; meanFm:0.738; maxFm:0.76
 Method:ICON,Dataset:SOC,Attribute:SOC-OC||Smeasure:0.784; wFmeasure:0.704; MAE:0.103; adpEm:0.816; meanEm:0.821; maxEm:0.836; adpFm:0.739; meanFm:0.743; maxFm:0.765
 Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.784; wFmeasure:0.75; MAE:0.117; adpEm:0.824; meanEm:0.833; maxEm:0.84; adpFm:0.789; meanFm:0.792; maxFm:0.806
+Method:ICON,Dataset:SOC,Attribute:SOC-SC||Smeasure:0.81; wFmeasure:0.721; MAE:0.079; adpEm:0.852; meanEm:0.856; maxEm:0.873; adpFm:0.728; meanFm:0.746; maxFm:0.782
 Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.769; wFmeasure:0.643; MAE:0.087; adpEm:0.803; meanEm:0.809; maxEm:0.828; adpFm:0.662; meanFm:0.677; maxFm:0.71
 
 ```
 
-Tranined on DUTS, evaluated on SOC-Test(1200 pics)
+Tranined on DUTS, evaluated on SOC-Test(1200 pics)，又名S0C-1200。
 ```
 Method:ICON,Dataset:SOC,Attribute:SOC-1200||Smeasure:0.811; wFmeasure:0.347; MAE:0.128; adpEm:0.812; meanEm:0.828; maxEm:0.896; adpFm:0.359; meanFm:0.363; maxFm:0.378
 ```
 
-Trained on SOC-Sal-Train_and_Val(2400 pics), evaluated on SOC-Attr(8 attributes, 600 pics).
+Trained on SOC-Sal-Train_and_Val(2400 pics), evaluated on SOC-Attr(9 attributes, 600 pics).
 ```
 Method:ICON,Dataset:SOC,Attribute:SOC-AC||Smeasure:0.84; wFmeasure:0.778; MAE:0.062; adpEm:0.89; meanEm:0.885; maxEm:0.894; adpFm:0.803; meanFm:0.806; maxFm:0.822
 Method:ICON,Dataset:SOC,Attribute:SOC-BO||Smeasure:0.7; wFmeasure:0.762; MAE:0.216; adpEm:0.599; meanEm:0.725; maxEm:0.787; adpFm:0.739; meanFm:0.811; maxFm:0.862
@@ -75,10 +76,11 @@ Method:ICON,Dataset:SOC,Attribute:SOC-HO||Smeasure:0.841; wFmeasure:0.785; MAE:0
 Method:ICON,Dataset:SOC,Attribute:SOC-MB||Smeasure:0.82; wFmeasure:0.746; MAE:0.072; adpEm:0.846; meanEm:0.862; maxEm:0.87; adpFm:0.772; meanFm:0.781; maxFm:0.794
 Method:ICON,Dataset:SOC,Attribute:SOC-OC||Smeasure:0.813; wFmeasure:0.742; MAE:0.086; adpEm:0.847; meanEm:0.859; maxEm:0.873; adpFm:0.775; meanFm:0.78; maxFm:0.8
 Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.826; wFmeasure:0.801; MAE:0.089; adpEm:0.86; meanEm:0.872; maxEm:0.88; adpFm:0.833; meanFm:0.833; maxFm:0.844
+Method:ICON,Dataset:SOC,Attribute:SOC-SC||Smeasure:0.834; wFmeasure:0.753; MAE:0.059; adpEm:0.895; meanEm:0.893; maxEm:0.906; adpFm:0.773; meanFm:0.779; maxFm:0.8
 Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.816; wFmeasure:0.714; MAE:0.061; adpEm:0.869; meanEm:0.873; maxEm:0.884; adpFm:0.734; meanFm:0.745; maxFm:0.766
 ```
 
-Trained on SOC-Sal-Train(1800 pics), evaluated on SOC-Attr(8 attributes, 600 pics).
+Trained on SOC-Sal-Train(1800 pics), evaluated on SOC-Attr(9 attributes, 600 pics).
 ```
 Method:ICON,Dataset:SOC,Attribute:SOC-AC||Smeasure:0.834; wFmeasure:0.774; MAE:0.067; adpEm:0.868; meanEm:0.891; maxEm:0.905; adpFm:0.781; meanFm:0.807; maxFm:0.827
 Method:ICON,Dataset:SOC,Attribute:SOC-BO||Smeasure:0.718; wFmeasure:0.78; MAE:0.203; adpEm:0.421; meanEm:0.746; maxEm:0.781; adpFm:0.58; meanFm:0.825; maxFm:0.847
@@ -87,6 +89,8 @@ Method:ICON,Dataset:SOC,Attribute:SOC-HO||Smeasure:0.834; wFmeasure:0.769; MAE:0
 Method:ICON,Dataset:SOC,Attribute:SOC-MB||Smeasure:0.815; wFmeasure:0.746; MAE:0.079; adpEm:0.813; meanEm:0.853; maxEm:0.865; adpFm:0.754; meanFm:0.784; maxFm:0.808
 Method:ICON,Dataset:SOC,Attribute:SOC-OC||Smeasure:0.786; wFmeasure:0.7; MAE:0.097; adpEm:0.816; meanEm:0.84; maxEm:0.856; adpFm:0.73; meanFm:0.743; maxFm:0.765
 Method:ICON,Dataset:SOC,Attribute:SOC-OV||Smeasure:0.807; wFmeasure:0.769; MAE:0.103; adpEm:0.802; meanEm:0.851; maxEm:0.862; adpFm:0.779; meanFm:0.808; maxFm:0.822
+Method:ICON,Dataset:SOC,Attribute:SOC-SC||Smeasure:0.819; wFmeasure:0.73; MAE:0.068; adpEm:0.867; meanEm:0.884; maxEm:0.903; adpFm:0.736; meanFm:0.759; maxFm:0.797
+Method:ICON,Dataset:SOC,Attribute:SOC-SO||Smeasure:0.796; wFmeasure:0.675; MAE:0.071; adpEm:0.829; meanEm:0.848; maxEm:0.869; adpFm:0.69; meanFm:0.712; maxFm:0.745
 ```
 
 ## 4. Others methods 
