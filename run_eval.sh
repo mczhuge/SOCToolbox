@@ -36,6 +36,11 @@ python soc_eval.py   \
     --method  'ICON' \
     --dataset  'SOC' \
     --attr  'SOC-OV' \
+    
+python soc_eval.py   \
+    --method  'ICON' \
+    --dataset  'SOC' \
+    --attr  'SOC-SC' \
 
 python soc_eval.py   \
     --method  'ICON' \
