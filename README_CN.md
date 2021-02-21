@@ -24,21 +24,21 @@
 python ./Train/SOC/drop_blank_and_generate_list.py 
 ```
 
-(B) 划分8个特殊类别并且生成它们对应的 test.txt 列表:
+(B) 划分9个特殊类别并且生成它们对应的 test.txt 列表:
 
 ```
 python ./Test/SOC/attr_categoty_and_generate_list.py 
 ```
 
-然后， 将会产生8个包含不同属性的划分文件夹，这一步很重要，因为划分好后的文件夹不仅利于 SOCToolbox 评估模型性能，也能方便您分析不同类别。产生的文件夹包含RGB images和对应GTs是依次是: `./datasets/SOC/Test/SOC-AC`, `./datasets/SOC/Test/SOC-BO`, `./datasets/SOC/Test/SOC-CL`, `./datasets/SOC/Test/SOC-HO`, `./datasets/SOC/Test/SOC-MB`, `./datasets/SOC/Test/SOC-OC`, `./datasets/SOC/Test/SOC-OV`, `./datasets/SOC/Test/SOC-SO`. 
+然后， 将会产生9个包含不同属性的划分文件夹，这一步很重要，因为划分好后的文件夹不仅利于 SOCToolbox 评估模型性能，也能方便您分析不同类别。产生的文件夹包含RGB images和对应GTs是依次是: `./datasets/SOC/Test/SOC-AC`, `./datasets/SOC/Test/SOC-BO`, `./datasets/SOC/Test/SOC-CL`, `./datasets/SOC/Test/SOC-HO`, `./datasets/SOC/Test/SOC-MB`, `./datasets/SOC/Test/SOC-OC`, `./datasets/SOC/Test/SOC-OV`, `./datasets/SOC/Test/SOC-SC`,`./datasets/SOC/Test/SOC-SO`. 
 
 **实际上, 如果你是通过上述链接下载的SOC数据集, 我们已经搞定了A,B两步骤.** (必要时, 你可以找到原始SOC数据集, 在 [这里](https://dpfan.net/socbenchmark/), 然后做上述A和B.)
 
 ## 2. 评估
 
-如果你训练已经完成, 需要生成`SOC-AC`, `SOC-BO`, `SOC-CL`, `SOC-HO`, `SOC-MB`, `SOC-OC`, `SOC-OV` 和 `SOC-SO` 对应的预测图。
+如果你训练已经完成, 需要生成`SOC-AC`, `SOC-BO`, `SOC-CL`, `SOC-HO`, `SOC-MB`, `SOC-OC`, `SOC-SC`, `SOC-OV`, `SOC-SC`和 `SOC-SO` 对应的预测图。
 
-如果你很早就已经生成了所有的SOC-Test, 可以通过把 `Attributes` 文件夹添加至你的预测文件夹, 如 `Prediction/你的模型/SOC/Attributes` 然后稍微改动一下这个 `Prediction/你的模型/SOC/attr_categoty_and_generate_list.py`里的路径, 就可以自动的划分8个属性的预测图到9个不同的文件夹。
+如果你很早就已经生成了所有的SOC-Test, 可以通过把 `Attributes` 文件夹添加至你的预测文件夹, 如 `Prediction/你的模型/SOC/Attributes` 然后稍微改动一下这个 `Prediction/你的模型/SOC/attr_categoty_and_generate_list.py`里的路径, 就可以自动的划分9个属性的预测图到9个不同的文件夹。
 
 然后, 你就可以开始评估了, 时长大约在2分钟左右.
 
