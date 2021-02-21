@@ -28,15 +28,15 @@ python ./Train/SOC/drop_blank_and_generate_list.py
 python ./Test/SOC/attr_categoty_and_generate_list.py 
 ```
 
-Then 8 file folders will be generated, which are `./datasets/SOC/Test/SOC-AC`, `./datasets/SOC/Test/SOC-BO`, `./datasets/SOC/Test/SOC-CL`, `./datasets/SOC/Test/SOC-HO`, `./datasets/SOC/Test/SOC-MB`, `./datasets/SOC/Test/SOC-OC`, `./datasets/SOC/Test/SOC-OV`, `./datasets/SOC/Test/SOC-SO`. They contain the images and GTs of each category. 
+Then 9 file folders will be generated, which are `./datasets/SOC/Test/SOC-AC`, `./datasets/SOC/Test/SOC-BO`, `./datasets/SOC/Test/SOC-CL`, `./datasets/SOC/Test/SOC-HO`, `./datasets/SOC/Test/SOC-MB`, `./datasets/SOC/Test/SOC-OC`, `./datasets/SOC/Test/SOC-OV`, `./datasets/SOC/Test/SOC-SC`, `./datasets/SOC/Test/SOC-SO`. They contain the images and GTs of each category. 
 
 **Actually, we have already processed A and B if you download SOC from above link.** (If needing, the original SOC dataset can be found [here](https://dpfan.net/socbenchmark/) and you can do A and B yourself.)
 
 ## 2. Evaluation
 
-When your training process has done, you should generate the predictions of `SOC-AC`, `SOC-BO`, `SOC-CL`, `SOC-HO`, `SOC-MB`, `SOC-OC`, `SOC-OV` and `SOC-SO`, respectively.
+When your training process has done, you should generate the predictions of `SOC-AC`, `SOC-BO`, `SOC-CL`, `SOC-HO`, `SOC-MB`, `SOC-OC`, `SOC-OV`, `SOC-SC` and `SOC-SO`, respectively.
 
-When you have already generated all SOC-Test, an alternative method is to add `Attributes` files to prediction file, such as `Prediction/**Your_Method**/SOC/Attributes` then slightly modify the path in `Prediction/*Your_Method**/SOC/attr_categoty_and_generate_list.py` to automatively split your predicted saliency maps to 8 attributes.
+When you have already generated all SOC-Test, an alternative method is to add `Attributes` files to prediction file, such as `Prediction/**Your_Method**/SOC/Attributes` then slightly modify the path in `Prediction/*Your_Method**/SOC/attr_categoty_and_generate_list.py` to automatively split your predicted saliency maps to 9 attributes.
 
 
 After that, you can evaluate your performance on SOC in ~2 minutes. 
