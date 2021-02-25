@@ -40,7 +40,7 @@ python ./Test/SOC/attr_categoty_and_generate_list.py
 
 如果你很早就已经生成了所有的SOC-Test, 可以通过把 `Attributes` 文件夹添加至你的预测文件夹, 如 `./maps/Prediction/你的模型/SOC/Attributes` 然后稍微改动一下这个 `./maps/Prediction/你的模型/SOC/attr_categoty_and_generate_list.py`里的路径, 就可以自动的划分9个属性的预测图到9个不同的文件夹。
 
-然后, 你就可以开始评估了, 时长大约在2分钟左右.
+然后, 变更run_eval中的METHOD='你的模型'，就可以开始评估了, 时长大约在2分钟左右.
 
 ```
 sh run_eval.sh
