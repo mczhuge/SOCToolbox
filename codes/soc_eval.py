@@ -18,8 +18,13 @@ def main():
     method = args.method
     dataset = args.dataset
     attr = args.attr
+<<<<<<< HEAD:codes/soc_eval.py
     gt_root = os.path.join('../maps/GT/'+dataset+'/'+attr+'/', 'mask')
     pred_root = os.path.join('../maps/Prediction/'+method+'/'+dataset+'/', attr)
+=======
+    gt_root = os.path.join('GT/'+dataset+'/'+attr+'/', 'mask')
+    pred_root = os.path.join('Prediction/'+method+'/'+dataset+'/', attr)
+>>>>>>> 34ab3b7416c9ac9e7520d188afdf1154224c545c:soc_eval.py
 
     gt_name_list = sorted(os.listdir(pred_root))
 
