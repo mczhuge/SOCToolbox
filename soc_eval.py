@@ -18,7 +18,7 @@ def main():
     method = args.method
     dataset = args.dataset
     attr = args.attr
-    gt_root = os.path.join('Test/'+dataset+'/'+attr+'/', 'mask')
+    gt_root = os.path.join('GT/'+dataset+'/'+attr+'/', 'mask')
     pred_root = os.path.join('Prediction/'+method+'/'+dataset+'/', attr)
 
     gt_name_list = sorted(os.listdir(pred_root))
