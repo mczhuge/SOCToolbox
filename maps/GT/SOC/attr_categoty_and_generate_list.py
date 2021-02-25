@@ -6,7 +6,7 @@ from PIL import Image
 import cv2
 from shutil import copyfile
 
-dir = './SOC-test' # only mask
+dir = './SOC-1200' # only mask
 
 txt_ac = './Attribute/AC.txt'
 txt_bo = './Attribute/BO.txt'
@@ -33,7 +33,7 @@ for i in range(len(ATTR)):
     for j in range(len(line)):
         
         #image_ = cv2.imread('image/'+line[j]+'.jpg')
-        mask_  = cv2.imread('mask/' +line[j]+'.png')
+        mask_  = cv2.imread('SOC-1200/' +line[j]+'.png')
 
         #cv2.imwrite('SOC-'+ATTR[i]+'/image/'+line[j]+'.jpg', image_)
         cv2.imwrite('SOC-'+ATTR[i]+'/mask/' +line[j]+'.png', mask_)
