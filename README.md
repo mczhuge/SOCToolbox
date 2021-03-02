@@ -9,7 +9,7 @@ Noted that, in our [ICON (arXiv, 2021）](https://arxiv.org/pdf/2101.07663.pdf),
 
 Thus, our Training and Testing set are 2400 and 600, respectively.  
 
-For a quick employment, you can download the updated SOC on [Baidu | 提取码: iqul ](https://pan.baidu.com/s/1kWebPUhCQOCsvvAouo7eGQ). 
+For a quick employment, you can download the updated SOC on [Baidu | Key: iqul ](https://pan.baidu.com/s/1kWebPUhCQOCsvvAouo7eGQ). 
 
 **If you download SOC on above link, you can ignore procedures below.**
 
@@ -46,7 +46,7 @@ sh run_eval.sh
 ```
 
 ## 3. Results by SOCToolbox
-The saliency maps of ICON can be found in [Baidu | 提取码:bopg](https://pan.baidu.com/s/19XV19I_0gfAjx2gwcweZcw).
+The saliency maps of ICON can be found in [Baidu | Key:bopg](https://pan.baidu.com/s/19XV19I_0gfAjx2gwcweZcw).
 
 Tranined on DUTS, evaluated on SOC-Attr(9 attributes, 600 pics)
 ```
