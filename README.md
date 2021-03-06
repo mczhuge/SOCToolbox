@@ -136,6 +136,14 @@ SOC results of other methods:
     year={2018}
 }
 
+@inproceedings{margolin2014evaluate,
+  title={How to evaluate foreground maps?},
+  author={Margolin, Ran and Zelnik-Manor, Lihi and Tal, Ayellet},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2014}
+}
+
 @article{zhuge2021salient,
   title={Salient Object Detection via Integrity Learning},
   author={Zhuge, Mingchen and Fan, Deng-Ping and Liu, Nian and Zhang, Dingwen and Xu, Dong and Shao, Ling},
