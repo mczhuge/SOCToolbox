@@ -1,5 +1,9 @@
 # SOC快速评测工具
 
+## News:
+
+🔥🔥🔥 **100个模型在SOC的显著图可以在此下载**  [Here](https://drive.google.com/drive/folders/1E80KZiyEoxxR6lqe3x8SSar6gYYm9xkf)!
+
 ## 1. 数据集与训练设置 [可忽略，直接跳到 2.评估，此仅为说明训练的设置]
 
 值得注意的是，在[ICON (arXiv, 2021）](https://arxiv.org/pdf/2101.07663.pdf)中， 我们使用了以下训练设置:
