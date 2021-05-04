@@ -1,5 +1,10 @@
 # Efficient SOC Toolbox / [SOC快速评测工具(中文Readme)](README_CN.md)
 
+## News:
+
+🔥🔥🔥 **100 methods** SOC saliency maps can be found on [Here](https://drive.google.com/drive/folders/1E80KZiyEoxxR6lqe3x8SSar6gYYm9xkf)!
+
+
 ## 1. Datasets and Training Setting
 
 Noted that, in our [ICON (arXiv, 2021）](https://arxiv.org/pdf/2101.07663.pdf), we use the following setting:
