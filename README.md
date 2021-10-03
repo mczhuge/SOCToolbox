@@ -105,7 +105,7 @@ If you want to re-evaluate these methods by using SOCToolbox, please add `Attrib
 
 Comparison:
 
-![comp](comparison.png) 
+![comp](comp.png) 
 
 ## 5. Acknowledgement
 Some codes borrowed from:
