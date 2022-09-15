@@ -2,6 +2,8 @@
 
 ## News:
 
+[03/2022 New version code ensembled in ICON](https://github.com/mczhuge/ICON/tree/main/util/evaltool)
+
 🔥🔥🔥 **100 methods** SOC saliency maps can be found on [Here](https://drive.google.com/drive/folders/1E80KZiyEoxxR6lqe3x8SSar6gYYm9xkf)!
 
 
